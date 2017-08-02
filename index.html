@@ -153,16 +153,68 @@
                 right: 0;
             }
             .cabeza{
-                height: 150px;
-                width: 30px;
-                background-image: url(tronco.jpg);
+                height: 40px;
+                width: 40px;
+                background-image: url(face.png);
                 background-size: cover;
-                background-repeat: no-repeat;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 90px;
+                z-index: -1;
+                
+            }
+            .cuerpo{ height: 60px;
+                width: 30px;
+               background-color: red;
                 border-radius: 20%;
                 position: absolute;
-                bottom: 0px;
-                left: 75px;   
+                bottom: 50px;
+                left: 6px;  
+                z-index: -2;
             }
+            .brazo1{
+                height: 15px;
+                width: 30px;
+               background-color: red;
+                border-radius: 20%;
+                transform: rotate(-30deg);
+                position: absolute;
+                bottom: 70px;
+                left: -12px;  
+                z-index: -2;}
+            .brazo2{
+                height: 15px;
+                width: 30px;
+               background-color: red;
+                border-radius: 20%;
+                transform: rotate(30deg);
+                position: absolute;
+                bottom: 70px;
+                left: 28px;  
+                z-index: -2;}
+            .pierna1{
+                height: 20px;
+                width: 50px;
+                background-color: blue;
+                border-radius: 20%;
+                transform: rotate(70deg);
+                position: absolute;
+                bottom: 20px;
+                left: 8px;  
+                z-index: -3;}
+            .pierna2{height: 20px;
+                width: 50px;
+                background-color: blue;
+                border-radius: 20%;
+                transform: rotate(-70deg);
+                position: absolute;
+                bottom: 20px;
+                left: -15px;  
+                z-index: -3;}
+            .nene:hover {
+                transform: translate(20px);
+            }       
+ 
         </style>
 	</head>
 
@@ -193,10 +245,8 @@
         <div class="brazo1"></div>
         <div class="brazo2"></div>
         <div class="pierna1"></div>
-        <div class="pierna2"></div>
-            
-        
-    </div>
+        <div class="pierna2"></div>       
+        </div>
     </div>
 	</body>
 </html>
